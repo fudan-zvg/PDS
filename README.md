@@ -1,1 +1,1 @@
-# preconditioned_diffusion_sampling
+# preconditioned diffusion sampling
