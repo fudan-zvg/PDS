@@ -26,7 +26,7 @@ The Langevin_dynamics applied by vanilla SGMs for generating samples is
 To accelerate the convergence while keeping the steady state distribution, our PDS use the following preconditioned Langevin_dynamics
 
 <img src="src/preconditioned_Langevin_dynamics.png" height = "50"  align=center />
-where the preconditioning matrix can be constructed by priori knowledge from the target dataset in frequency domain or space (pixel) domain.  
+where the preconditioning matrix M can be constructed by priori knowledge from the target dataset in frequency domain or space (pixel) domain.  
 
 ## License
 
