@@ -25,6 +25,7 @@ To accelerate the convergence while keeping the steady state distribution, our P
 
 <img src="src/preconditioned_Langevin_dynamics.png" style="zoom:10%"  align=center />
 where the preconditioning matrix can be constructed by priori knowledge from the target dataset in frequency domain or space (pixel) domain.  
+
 ## License
 
 [MIT](LICENSE)
