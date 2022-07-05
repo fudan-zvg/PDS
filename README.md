@@ -37,7 +37,7 @@ symmetric matrix.
 ```bibtex
 @inproceedings{ma2022pds,
   title={Accelerating Score-based Generative Models with Preconditioned Diffusion Sampling},
-  author={Hengyuan Ma, Li Zhang, Xiatian Zhu, and Jianfeng Feng},
+  author={Ma, Hengyuan and Zhang, Li and Zhu, Xiatian and Feng, Jianfeng},
   booktitle={European Conference on Computer Vision},
   year={2022}
 }
