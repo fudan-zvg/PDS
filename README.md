@@ -49,11 +49,11 @@ $ python main.py --config: Model configuration. (default: 'None')
 * `alpha` is the setting of the parameter that normalize the frequency filter.
 
 
-Example: sampling FFHQ dataset with both frequency and space filter, under 30 times acceleration.
+Example: sampling FFHQ (1024x1024) dataset with both frequency and space filter, under 30 times acceleration.
 ```
 $ python main.py --config ./configs/ve/ffhq_ncsnpp_continuous.py --workdir  yourworkdir --speed_up 30 --freq_mask_path ./ffhq_freq.npy --space_mask_path ./ffhq_space.npy
 ```
-Example: sampling LSUN (bedroom) dataset with only frequency filter, under 12 times acceleration.
+Example: sampling LSUN bedroom (256x256) dataset with only frequency filter, under 12 times acceleration.
 ```
 $ python main.py --config ./configs/ve/bedroom_ncsnpp_continuous.py --workdir  yourworkdir --speed_up 12 --freq_mask_path ./bedroom_freq.npy
 ```
