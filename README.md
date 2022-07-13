@@ -79,5 +79,6 @@ $ python main.py --config ./configs/ve/bedroom_ncsnpp_continuous.py
 }
 ```
 
-## This implementation is based on
-* https://github.com/yang-song/score_sde_pytorch
+## Acknowledgement
+Thanks to previous open-sourced repo:
+[NCSN++](https://github.com/yang-song/score_sde_pytorch)
