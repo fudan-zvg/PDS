@@ -22,7 +22,7 @@ class NCSNpp(nn.Module):
     super().__init__()
     self.config = config
     self.act = act = get_act(config)
-    self.register_buffer('sigmas', torch.tensor(utils.get_sigmas(config)))#在内存中定义一个常量（不视为训练的参数），同时，模型保存和加载的时候可以写入和读出。
+    self.register_buffer('sigmas', torch.tensor(utils.get_sigmas(config)))
 
     self.nf = nf = config.model.nf
     ch_mult = config.model.ch_mult
@@ -73,11 +73,11 @@ class NCSNpp(nn.Module):
       modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)
       nn.init.zeros_(modules[-1].bias)
 
-    AttnBlock = functools.partial(layerspp.AttnBlockpp,#剩下未指定的参数：channels
+    AttnBlock = functools.partial(layerspp.AttnBlockpp,
                                   init_scale=init_scale,
                                   skip_rescale=skip_rescale)
 
-    Upsample = functools.partial(layerspp.Upsample,#剩下未指定的参数：in_ch, out_ch
+    Upsample = functools.partial(layerspp.Upsample,
                                  with_conv=resamp_with_conv, fir=fir, fir_kernel=fir_kernel)
 
     if progressive == 'output_skip':
