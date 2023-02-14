@@ -83,7 +83,9 @@ def get_sampling_fn(config, sde, shape, inverse_scaler, eps, freq_mask_path, spa
     if space_mask_path is not None:
         space_mask = np.load(space_mask_path).reshape(
             [1, config.data.num_channels, config.data.image_size, config.data.image_size])
+        space_mask /= space_mask.max()
         space_mask = torch.from_numpy(space_mask).cuda()
+        space_mask = (space_mask + alpha - 1) / alpha
         space_mask = space_mask.pow(-1)
     else:
         space_mask = torch.ones(1).cuda()
@@ -91,8 +93,10 @@ def get_sampling_fn(config, sde, shape, inverse_scaler, eps, freq_mask_path, spa
     if freq_mask_path is not None:
         freq_mask = np.load(freq_mask_path).reshape(
             [1, config.data.num_channels, config.data.image_size, config.data.image_size])
-        freq_mask = torch.from_numpy(freq_mask).cuda()
+
+        freq_mask /= freq_mask.max()
         freq_mask = (freq_mask + alpha - 1) / alpha
+        freq_mask = torch.from_numpy(freq_mask).cuda()
         freq_mask = freq_mask.pow(-1)
     else:
         freq_mask = 1
