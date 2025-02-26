@@ -5,8 +5,8 @@
 > **ECCV 2022**
 
 ###  Paper
-> [**Preconditioned Score-based Generative Models**],            
-> Hengyuan Ma, Xiatian Zhu, Jianfeng Feng, and Li Zhang
+> **Preconditioned Score-based Generative Models**,            
+> Hengyuan Ma, Xiatian Zhu, Jianfeng Feng, and Li Zhang      
 > **IJCV 2025**
 
 ## News
