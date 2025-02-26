@@ -4,7 +4,13 @@
 > Hengyuan Ma, Li Zhang, Xiatian Zhu, and Jianfeng Feng   
 > **ECCV 2022**
 
+###  [Paper]
+> [**Preconditioned Score-based Generative Models**],            
+> Hengyuan Ma, Xiatian Zhu, Jianfeng Feng, and Li Zhang
+> **IJCV 2025**
+
 ## News
+- [2022/07/04]: Our journal extension Preconditioned Score-based Generative Models is accepted by IJCV!
 - [2022/07/04]: PDS is accepted by **ECCV 2022**!
 
 ## Abstract
@@ -71,6 +77,15 @@ $ python main.py --config ./configs/ve/bedroom_ncsnpp_continuous.py --workdir  y
   author={Ma, Hengyuan and Zhang, Li and Zhu, Xiatian and Feng, Jianfeng},
   booktitle={European Conference on Computer Vision},
   year={2022}
+}
+```
+
+```bibtex
+@article{ma2025pds
+    title={Preconditioned Score-based Generative Models}, 
+    author={Ma, Hengyuan and Zhu, Xiatian and Feng, Jianfeng and Zhang, Li},
+    journal={International Journal of Coumputer Vision},
+    year={2025}
 }
 ```
 
