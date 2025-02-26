@@ -1,16 +1,14 @@
 # Accelerating Score-based Generative Models with Preconditioned Diffusion Sampling
-###  [Paper](http://arxiv.org/abs/2207.02196)
-> [**Accelerating Score-based Generative Models with Preconditioned Diffusion Sampling**](http://arxiv.org/abs/2207.02196),            
+###  [**Accelerating Score-based Generative Models with Preconditioned Diffusion Sampling**](http://arxiv.org/abs/2207.02196),            
 > Hengyuan Ma, Li Zhang, Xiatian Zhu, and Jianfeng Feng   
 > **ECCV 2022**
 
-###  Paper
-> **Preconditioned Score-based Generative Models**,            
+###  **Preconditioned Score-based Generative Models**,            
 > Hengyuan Ma, Xiatian Zhu, Jianfeng Feng, and Li Zhang      
 > **IJCV 2025**
 
 ## News
-- [2022/07/04]: Our journal extension Preconditioned Score-based Generative Models is accepted by IJCV!
+- [2025/02/27]: Our journal extension Preconditioned Score-based Generative Models is accepted by IJCV!
 - [2022/07/04]: PDS is accepted by **ECCV 2022**!
 
 ## Abstract
